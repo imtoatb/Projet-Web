@@ -5,20 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404 Books</title>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
   <script src="script.js"></script>
+  <script src="nav.js"></script>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">404BOOKS</div>
-    <div class="nav">
-      <div class="nav-item active">Home</div>
-      <div class="nav-item">Books</div>
-      <div class="nav-item">Country</div>
-      <div class="nav-item">Info</div>
-      <div class="upload-btn">UPLOAD INFORMATION</div>
-    </div>
+<div class="header">
+  <div class="logo">404BOOKS</div>
+  <div class="hamburger" onclick="toggleNav()">
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
+  <div class="nav">
+    <div class="nav-item active">Home</div>
+    <div class="nav-item dropdown">
+      Books
+      <div class="dropdown-content">
+        <a href="#" class="dropdown-item">Fiction</a>
+        <a href="#" class="dropdown-item">Non-fiction</a>
+        <a href="#" class="dropdown-item">Sci-Fi</a>
+      </div>
+    </div>
+    <div class="nav-item dropdown">
+      Country
+      <div class="dropdown-content">
+        <a href="#" class="dropdown-item">USA</a>
+        <a href="#" class="dropdown-item">Canada</a>
+        <a href="#" class="dropdown-item">Germany</a>
+      </div>
+    </div>
+    <div class="nav-item">Info</div>
+    <div class="upload-btn"><a href="Upload.html">UPLOAD INFORMATION</a></div>
+  </div>
+</div>
 
   <div class="hero">
     <h1 id="secret-text">
