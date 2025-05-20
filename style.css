@@ -33,8 +33,32 @@ nav ul {
 
 nav a {
     color: white;
-    text-decoration: none;
     font-weight: 600;
+}
+
+nav a:hover {
+    color: #FF6B6B;
+    transition: color 0.3s ease;
+    /*Faire que ça grossisse aussi*/
+}
+
+
+/*Upload bouton*/
+
+.upload-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+main {
+    text-align: center;
+    margin-top: 80px;
 }
 
 
