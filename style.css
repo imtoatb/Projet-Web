@@ -1,151 +1,150 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* --- Général --- */
 body {
-    background-color: #050E16;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
-
-/*Bar de navigation uwu*/
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav a {
-    color: white;
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: #FF6B6B;
-    transition: color 0.3s ease;
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-
-/*Logo*/
-
-.title {
-    font-size: 24px;
-    letter-spacing: 10px;
+/*pour le head */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #000;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 10px;
 }
 
-.barcode {
-    font-family: monospace;
-    font-size: 18px;
-    margin-right: 10px;
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-/*Upload bouton*/
-
-.upload-btn {
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-weight: 600;
-    cursor: pointer;
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  position: relative;
 }
 
-.upload-btn:hover {
-    background-color: #FF6B6B;
-    color: white;
-    transition: background-color 0.3s ease;
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
 }
 
-
-main {
-    text-align: center;
-    margin-top: 80px;
-}
-
-h1 {
-    font-size: 2rem;
-    font-weight: 900;
-    line-height: 1.5;
-}
-
-.intro {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.intro h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-.highlight {
-    color: red;
-}
-
-.intro p {
-    font-size: 1.2em;
-    color: #ccc;
-    margin-top: 20px;
-}
-
-.library-btn {
-    background-color: #bb2e2e;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-weight: bold;
-    cursor: pointer;
+.upload-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 
 
-/*Ptits carrés*/
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 80px 40px;
-    flex-wrap: wrap;
+
+
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0;
 }
 
-.card {
-    background-color: white;
-    height: 100px;
-    width: 100px;
+.highlight-red {
+  color: red;
 }
 
-.card1 { height: 150px; width: 150px; }
-.card2 { height: 100px; width: 100px; }
-.card3 { height: 120px; width: 120px; }
-.card4 { height: 140px; width: 140px; }
-.card5 { height: 180px; width: 180px; }
-.card6 { height: 80px; width: 80px; }
+/* que pour Home/index */
+.page-home .main-title {
+  font-size: 28px;
+}
 
+.page-home .library-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.page-home .blocks {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.page-home .block {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+.page-home .block:hover {
+  transform: scale(1.2);
+}
+
+/* page upload */
+.page-upload .upload-title {
+  font-size: 120px;
+  color: red;
+  text-align: center;
+  margin: 50px 0 0;
+}
+
+.page-upload .upload-subtitle {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-upload .upload-button-large {
+  background-color: red;
+  padding: 30px 60px;
+  border-radius: 40px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page-upload .blocks {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.page-upload .block {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+.page-upload .block:hover {
+  transform: scale(1.2);
+}
