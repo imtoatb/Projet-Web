@@ -42,6 +42,17 @@ nav a:hover {
     /*Faire que ça grossisse aussi*/
 }
 
+/*Logo*/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.barcode {
+    font-family: monospace;
+    font-size: 18px;
+    margin-right: 10px;
+}
 
 /*Upload bouton*/
 
@@ -59,6 +70,16 @@ nav a:hover {
 main {
     text-align: center;
     margin-top: 80px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: red;
 }
 
 
