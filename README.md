@@ -147,6 +147,3 @@ Visit `upload.html` to submit a new banned book:
 Use `localStorage.getItem("openai_api_key")` in the browser console to verify your saved key.
 
 ---
-
-
-Free Palestine ❤️
