@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library - 404 Books</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/library.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<div class="header">
+  <div class="logo">404BOOKS</div>
+  <div class="hamburger" onclick="toggleNav()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="nav">
+    <a href="index.html" class="nav-item">Home</a>
+    <div class="nav-item dropdown">
+
+      <a href="library.html" class="nav-item active">Books</a>
+      <div class="dropdown-content">
+        <a href="library.html?category=Fiction" class="dropdown-item">Fiction</a>
+        <a href="library.html?category=Non-fiction" class="dropdown-item">Non-fiction</a>
+        <a href="library.html?category=Sci-Fi" class="dropdown-item">Sci-Fi</a>
+      </div>
+    </div>
+    <div class="nav-item dropdown">
+      Country
+      <div class="dropdown-content">
+        <a href="library.html?country=USA" class="dropdown-item">USA</a>
+        <a href="library.html?country=Iran" class="dropdown-item">Iran</a>
+        <a href="library.html?country=Chile" class="dropdown-item">Chile</a>
+      </div>
+    </div>
+        <div class="nav-item">
+      <a href="about.html" class="nav-item">About</a>
+    </div>
+    <div class="upload-btn"><a href="upload.html">UPLOAD INFORMATION</a></div>
+  </div>
+</div>
+<div class="library-hero">
+  <h1>Explore the Shadow Library</h1>
+
+  <div class="search-filters">
+    <input id="search-input" type="text" placeholder="Search for a book or topic..." />
+
+    <select id="category-filter">
+      <option value="">All Categories</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Non-fiction">Non-fiction</option>
+      <option value="Politics">Politics</option>
+      <option value="Philosophy">Philosophy</option>
+      <option value="Mental Health">Mental Health</option>
+      <option value="Memoir">Memoir</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+    </select>
+
+    <select id="country-filter">
+      <option value="">All Countries</option>
+      <option value="India">India</option>
+      <option value="Iran">Iran</option>
+      <option value="USA">USA</option>
+      <option value="Chile">Chile</option>
+      <option value="USSR">USSR</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="UK">UK</option>
+      <!-- Add more as needed -->
+    </select>
+  </div>
+</div>
+<div id="filterInfo" style="text-align: center; margin-bottom: 1rem;"></div>
+<div class="library-grid" id="libraryGrid"></div>
+
+<!-- for some reason the library .css is not working so i can't remove the css from here-->
+<style>
+  .library-hero {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #search-input {
+    width: 50%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .library-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .book-item {
+    width: 200px;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+</style>
+
+</body>
+<footer style="background-color: #000000; color: white; padding: 20px 0; text-align: center;">
+  <div>
+    <p>&copy; 2025 404Books. All Rights Reserved.</p>
+  </div>
+  <div>
+    <a href="about.html" style="color: white; text-decoration: none; margin: 0 10px;">About Us</a>
+    <a href="about.html" style="color: white; text-decoration: none; margin: 0 10px;">Contact</a>
+    <a href="about.html" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+    <a href="about.html" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+  </div>
+  <div>
+    <p>Follow us on:</p>
+    <a href="#" style="color: white; margin: 0 10px;">Facebook</a>
+    <a href="#" style="color: white; margin: 0 10px;">Twitter</a>
+    <a href="#" style="color: white; margin: 0 10px;">Instagram</a>
+  </div>
+</footer>
+</html>
