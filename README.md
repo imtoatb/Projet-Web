@@ -22,7 +22,7 @@
 
 ## ⚙️ How to Run Locally
 
-> Requires Python 3 installed on your system.
+> Requires Python 3 installed on your system. Or any other different way to run an http server locally, this is because of the handling of json files in our code.
 
 ### Step-by-step:
 
@@ -70,17 +70,26 @@ This page includes:
 
 #### 🔐 Save Your API Key (Securely)
 
+![image](https://github.com/user-attachments/assets/6af0151d-c081-4992-a825-cfcb8ea19786)
+
+
 Your key is saved locally in your browser using `localStorage`.
 
 1. Enter your key in the input field (starts with `sk-`)
 2. Click **Save Key**
 3. You're ready to ask questions about the book's context.
 
-> Note: All GPT answers are strictly limited to the book's metadata.
+> Note: All GPT answers are strictly limited to the book's metadata. We have **injection-proofed** the AI to stop any diversion of it's purpose:
+
+ ![image](https://github.com/user-attachments/assets/2f7b7cf2-d017-4765-b1d3-1aa2f87d119a)
+
 
 ---
 
 ## 📤 Upload a Book (Local Only)
+
+![image](https://github.com/user-attachments/assets/e2df91c6-d6f7-4b7b-ac26-7bafcd0750e9)
+
 
 Visit `upload.html` to submit a new banned book:
 
@@ -88,6 +97,9 @@ Visit `upload.html` to submit a new banned book:
 - Upload a PDF or EPUB file
 
 ### Submission Persistence
+
+![image](https://github.com/user-attachments/assets/e7648126-3c3c-4d08-8546-22f0a35e618a)
+
 
 - All uploads are stored in `localStorage` (your browser only)
 - No data is sent to a server (fully offline)
@@ -121,10 +133,10 @@ Visit `upload.html` to submit a new banned book:
 ├── book.html           # Book Details + Chat
 ├── upload.html         # Upload Form
 ├── books.json          # Main dataset (static book info)
-├── script.js           # Logic for filters, GPT chat, etc.
-├── nav.js              # Navigation toggle logic
+├── js/
+│   └── js files
 ├── css/
-│   └── styles.css      # Main styling
+│   └── css files 
 └── images/             # Book covers
 ```
 
@@ -136,12 +148,5 @@ Use `localStorage.getItem("openai_api_key")` in the browser console to verify yo
 
 ---
 
-## 🏁 Coming Soon (Ideas)
 
-- Read-online PDF embed per book
-- Admin moderation dashboard
-- Search by tag, ban reason, year
-
----
-
-Built with ❤️ for free thought and banned books.
+Free Palestine ❤️
